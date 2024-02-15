@@ -1,2 +1,27 @@
 @use './partials/mixins' as *;
 @use './partials/variables' as *;
+
+@import "bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(231, 231, 231);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+.flag {
+    width: 30px;
+}
