@@ -24,7 +24,8 @@
                             title: movie.title,
                             original_title: movie.original_title,
                             original_language: movie.original_language,
-                            vote: movie.vote_average,
+                            vote: Math.ceil(movie.vote_average / 2),
+                            poster_path: movie.poster_path,
                         }
                     })
                 });
@@ -42,7 +43,8 @@
                             title: serie.name,
                             original_title: serie.original_name,
                             original_language: serie.original_language,
-                            vote: serie.vote_average,
+                            vote: Math.ceil(serie.vote_average / 2),
+                            poster_path: serie.poster_path,
                         }
                     })
                 });
